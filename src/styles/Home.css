@@ -6,7 +6,6 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
 }
 
 .card-container {
@@ -75,6 +74,9 @@
 }
 
 .frase {
+  font-family: 'Nunito Sans';
+  font-weight: 300;
   font-size: 1.5rem;
   text-align: left;
 }
+

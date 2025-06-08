@@ -2,16 +2,20 @@ import '../styles/Home.css';
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import { useState } from 'react';
 
-function Home() {
+function Login() {
   const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <div className="home-wrapper">
       <div className="card-container">
         <div className="home-left">
           <div className="login-box">
-            <h1>¡Bienvenido!</h1>
+            <h1 className='title'>¡Bienvenido!</h1>
+
             <p>Ingresa tu correo y contraseña para continuar.</p>
 
             <TextField
@@ -20,6 +24,8 @@ function Home() {
               variant="outlined"
               fullWidth
               margin="normal"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               
             />
             <TextField
@@ -28,6 +34,8 @@ function Home() {
               variant="outlined"
               fullWidth
               margin="normal"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
 
             <Button
@@ -35,7 +43,7 @@ function Home() {
               color="primary"
               size="large"
               fullWidth
-              onClick={() => navigate('/login')}
+              onClick={() => navigate('/dashboard')}
               sx={{ fontWeight: 'bold', marginTop: '1.5rem', backgroundColor: '#000'}}
             >
               Iniciar sesión
@@ -59,4 +67,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Login;

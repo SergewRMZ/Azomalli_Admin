@@ -1,11 +1,15 @@
-import Home from './screens/Home'
-import { Route, Routes } from 'react-router-dom'
+import Dashboard from './screens/Dashboard';
+import Login from './screens/Login'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
