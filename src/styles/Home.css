@@ -1,0 +1,80 @@
+@import url('./colors.css');
+
+.home-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+.home-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+}
+
+.login-box {
+  height: 60%;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 70%;
+  text-align: center;
+}
+
+.home-right {
+  width: 50%;
+  background-image: url('../assets/Fondo_Home.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-box {
+  width: 60%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 80%;
+}
+
+.brand-logo-editable {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+}
+
+.brand-logo-editable img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.frase {
+  font-size: 1.5rem;
+  text-align: left;
+}
